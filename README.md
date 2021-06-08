@@ -1,1 +1,1 @@
-# HYF-Module-HTMLCSSGIT-week1-myDigitalResum.github.io
+# HYF-Module-HTMLCSSGIT.github.io
