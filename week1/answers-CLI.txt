@@ -1,6 +1,6 @@
 1- create a hidden folder (we add a dot "."  before the name to make it hidden),example:   mkdir .myFolderName           
   create a hidden file  (we add a dot "."  before the name to make it hidden),example:     touch .myFileName.txt 
-  display hidden folders and files, we use "ls" to display the folders and files in the current directory, with "a" which stands for all.
+  display hidden folders and files, we use "ls" to display the folders and files in the current directory combined with "a" which stands for all.
   example:      ls -a 
 
 
