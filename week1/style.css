@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pink {
+  /* color: #bc00dd; */
+  color: #d81159;
+}
+body {
+  /* background-color: #ffe7e9; */
+  background-image: url("images/IMG_2244.JPG");
+  background-size: cover;
+  padding: 5% 0 0 5%;
+  height: 100vh;
+  width: 100vw;
+  font-size: 24px;
+  /* color: #53eb97; */
+  /* color: #3fc1c0; */
+  color: #05668d;
+  font-family: "Baloo Tammudu 2", cursive;
+  position: relative;
+}
+
+/* ---------------start grid section----- */
+.container {
+  display: grid;
+  height: 80%;
+  width: 90%;
+  grid-template-columns: 35% 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "image name name" "image sum sum" "image sum sum";
+  margin-right: 5%;
+  background-color: #9cdfe5;
+  z-index: -3;
+}
+.image {
+  grid-area: image;
+  background-image: url("images/myfoto.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  /* background-blend-mode: darken; */
+}
+.name {
+  grid-area: name;
+  /* background-color: cornflowerblue; */
+  align-self: center;
+  justify-self: center;
+  font-style: italic;
+  font-family: "Lobster Two", cursive;
+
+  padding: 10%;
+}
+#my-name {
+  font-size: 2rem;
+}
+.sum {
+  grid-area: sum;
+  align-self: center;
+  justify-self: center;
+  padding: 10%;
+
+  /* background-color: crimson; */
+}
+.sum h3 {
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+}
+.sum a {
+  text-decoration: none;
+  font-style: italic;
+}
+/* ---------------end grid section----------------- */
+
+/* ----------------links section-------------- */
+aside {
+  position: absolute;
+  height: 100%;
+  width: 5%;
+  right: 1%;
+  top: 0;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  z-index: 2;
+}
+.div-links {
+  margin: 30px 0;
+}
+.links {
+  border: 0.5px solid #d81159;
+  background-color: #d81159;
+  color: azure;
+  border-radius: 50%;
+  padding: 10%;
+  justify-content: center;
+  vertical-align: middle;
+  align-content: center;
+}
+.links:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+/* ------------------------end links section------- */
+
+/* 
+  ------------------------start arrows bottom section---------- */
+.bottom-div {
+  display: flex;
+  width: 90%;
+  height: 15%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+}
+/* .bottom-div button:hover {
+  cursor: pointer;
+} */
+.arrows {
+  border: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* ------------------end arrows bottom section-------- */
+
+/* -------------------start hidden section----------- */
+
+.wrapper {
+  background-image: url("images/IMG_2244.JPG");
+  background-size: cover;
+  background-position: bottom;
+  /* background-color: chartreuse; */
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  left: 5%;
+  bottom: 0%;
+  z-index: 1;
+}
+
+#hidden-section {
+  display: none;
+}
+
+.wrapper .my-info {
+  display: flex;
+  /* height: 58%; */
+  padding: 0 5%;
+  justify-content: space-around;
+  margin-bottom: 2%;
+  line-height: 1.5em;
+}
+.wrapper .my-info h2 {
+  font-style: italic;
+  margin-top: 20%;
+}
+.skills-header {
+  padding: 0 5%;
+  line-height: 1.5em;
+}
+.skills {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "css prog-css" " js prog-js" "msql prog-msql";
+  padding: 0 15%;
+  text-rendering: geometricPrecision;
+  /* margin-bottom: 2%; */
+  line-height: 1.5em;
+  grid-row-gap: 5%;
+}
+.css {
+  grid-area: css;
+}
+.prog-css {
+  grid-area: prog-css;
+  position: relative;
+}
+.js {
+  grid-area: js;
+}
+.prog-js {
+  grid-area: prog-js;
+  position: relative;
+}
+.msql {
+  grid-area: msql;
+}
+.prog-msql {
+  grid-area: prog-msql;
+  position: relative;
+}
+.line {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  height: 20px;
+  padding-bottom: 4px;
+}
+.prog-css::before,
+.prog-js::before,
+.prog-msql::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(235, 0, 0, 0.5);
+  /* background-color: rgba(230, 8, 8, 0.9); */
+  border-radius: 20px;
+  animation: progress 7s linear infinite;
+}
+.prog-css::before {
+  max-width: 85%;
+}
+.prog-js::before {
+  max-width: 30%;
+}
+.prog-msql::before {
+  max-width: 40%;
+}
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+
+  20% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.wrapper .arrow-down {
+  height: 1vh;
+  line-height: 0.5em;
+  width: 100%;
+  text-align: center;
+  justify-content: bottom;
+  font-size: 40px;
+  margin-top: 3%;
+}
+/* --------------------------end hidden section--------------------- */
+
+@media all and (max-width: 499px) {
+  body {
+    font-size: 16px;
+  }
+  #my-name {
+    font-size: 1.3rem;
+  }
+  .sum p {
+    line-height: 1.2em;
+  }
+  .wrapper .my-info {
+    line-height: 1.2em;
+  }
+  .wrapper .arrow-down {
+    font-size: 16px;
+  }
+  .line {
+    font-size: 12px;
+    height: 12px;
+  }
+}

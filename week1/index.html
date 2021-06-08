@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reema's resume</title>
+
+</head>
+<body>
+<header id= "container" class="container">
+    <div class="image"></div>
+    <div class="name">
+         <h1 id="my-name">HI! I'M <span class="pink">Reema Alshohof</span></h1>
+        </div>
+    <div class="sum">
+        <h3>Summary</h3>
+        <p>A motivated student at <span> <a class="pink" href="https://www.hackyourfuture.net/" target="_blank">Hack Your Future</a> </span>. Eager to start my career as a web developer designing professional and  user friendly websites. </p>
+    </div>
+</header>
+<aside >  
+    <div class="div-links"><a href=""><i class="fa fa-slack links" aria-hidden="true"></i></a></div>
+    <div class="div-links"> <a href="">
+    
+<i class="fa fa-facebook-square links" aria-hidden="true"></i>
+
+        
+      </a>
+    </div>
+    <div class="div-links"> <a href="">
+        <i class="fa fa-envelope-o links" aria-hidden="true"></i>
+        </a>
+    </div>
+</aside>
+<section class="bottom-div pink">
+    <button class="arrows" id="open" onclick = " openBtn() ">
+        <i class="fa fa-angle-double-up pink" aria-hidden="true"></i>
+    </button>
+        <p>About Me</p>
+</section>
+<div  id="hidden-section" class="wrapper"> 
+
+<div class="my-info">
+  <div class="experience">
+      <h2 class="pink">Experience</h2>
+      <ul class="fa-ul">
+          <li> <i class="fa-li fa fa-spinner fa-spin pink"></i>English Teacher<br>
+             at Hala Kindergarten / Syria</li>
+          <li> <i class="fa-li fa fa-spinner fa-spin pink"></i>Cashier and office clerk<br>
+             at Alhafiz Company For Money Transfer / Syria</li>
+             <li> <i class="fa-li fa fa-spinner fa-spin pink"></i>Voluntary Job <br>as teacher assistant / The Netherlands </li>
+      </ul>
+  </div>
+  <div class="education">
+      <h2 class="pink">Education</h2>
+      <ul class="fa-ul"> 
+          <li> <i class="fa-li fa fa-spinner fa-spin pink"></i>English literature<br> 
+            Tishreen university / Syria
+        </li>
+        <li> <i class="fa-li fa fa-spinner fa-spin pink"></i>Course Interactivity with JavaScript<br>
+            by University of Michigan</li>
+            <li> <i class="fa-li fa fa-spinner fa-spin pink"></i>Course HTML, CSS, and Javascript for Web Developers<br>
+                by Johns Hopkins University</li>
+      </ul>
+  </div>
+  
+</div>
+<h2 class="skills-header pink">Developer Skills</h2>
+<div class="skills">
+    <h4 class="css">HTML & CSS</h4>
+    <div class="prog-css line pink"> 85%</div>
+    <h4 class="js">JavaScript</h4>
+    <div class="prog-js line pink" > 30%</div>
+
+    <h4 class="msql">MSQL</h4>
+    <div class=" prog-msql line pink">40%</div>
+
+    
+  </div>
+  <div class="arrow-down pink"><button class="arrows" onclick=" closeBtn() "><i class="fa fa-angle-double-down pink" aria-hidden="true"></i></button>
+  </div>
+</div> 
+
+<script>
+    // var open_btn = document.getElementById('open');
+    function openBtn () {
+        document.getElementById('hidden-section').style.display='block';
+        document.getElementById('container').style.filter='blur(5px)';
+        document.getElementById('container').style.background_blende_mode='darken';
+    }
+    // var close_btn = document.getElementById('close');
+    function closeBtn () {
+        document.getElementById('hidden-section').style.display='none';
+        document.getElementById('container').style.filter='blur(0)';
+        document.getElementById('container').style.background_blende_mode='default';
+    }
+    </script>    
+</body>
+</html>
