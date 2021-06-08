@@ -1,0 +1,11 @@
+1- create a hidden folder                              mkdir .myFolderName           
+create a hidden file                               touch .myFileName.txt 
+ display hidden folders and files           ls -a 
+
+
+2- mkdir -p  this command let us make more than on directory at once  example: 
+mkdir -p my/first/homework/for/HYF
+
+
+3- to append new information to a file without overwritten what is already existed, we use double arrows example:      
+ echo "my new info" >> myFileName.txt   
