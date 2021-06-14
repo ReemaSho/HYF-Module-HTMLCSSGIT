@@ -11,15 +11,18 @@ html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
 }
 /* ---------------------header section----------- */
 
 header {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 49% 100%, 0 73%);
   position: relative;
-  padding-top: 30%;
+  padding-top: 45%;
+  margin-bottom: 15vh;
+  clear: both;
 }
 header::before {
   content: "";
@@ -49,13 +52,62 @@ header h1 {
   background: linear-gradient(to right, red, yellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* text-shadow: 1px 2px orangered; */
+  text-shadow: 0.5px 1px orangered;
   font-size: 3rem;
   font-style: italic;
   text-transform: uppercase;
   margin-left: 1%;
 }
 /* --------------------end header section --------------- */
+main {
+  width: 100%;
+  z-index: 1;
+  /* background-color: tomato; */
+}
+main section {
+  width: 95%;
+  margin: auto;
+  /* background-color: yellow; */
+}
+main > section > h2 {
+  color: red;
+  font-size: 1.7rem;
+  width: 100%;
+  margin-bottom: 20%;
+  text-align: center;
+  font-style: italic;
+  /* background-color: turquoise; */
+}
+/* ------------------- start grid float section ------------------- */
+.grid-floats {
+  width: 100%;
+  /* background-color: slateblue; */
+}
+.grid-floats > .grid-item {
+  width: 100%;
+  list-style: none;
+  color: #333;
+  /* background-color: deeppink; */
+  /* height: 100vh; */
+}
+.grid-floats > .grid-item > h3 {
+  /* margin-left: 3%; */
+  margin: 3vh 0 3vh 3%;
+}
+.grid-floats > .grid-item > p {
+  margin: 0 0 15vh 3%;
+  text-align: start;
+}
+.grid-floats > .grid-item > img {
+  width: 90%;
+  margin: 5%;
+  /* background-color: #333; */
+}
+.grid-floats:nth-child(2) > p {
+  direction: rtl;
+  margin: 0 3% 15vh 0%;
+}
+/* ________________end grid float section ___________ */
 
 /* ----------media Q foe tablet------------ */
 @media all and (min-width: 600px) and (max-width: 1024px) {
@@ -77,6 +129,7 @@ header h1 {
     padding-top: 10%;
   }
   header > h1 {
+    text-shadow: 1px 2px orangered;
     font-size: 8rem;
   }
   /* end editing header ----- */
