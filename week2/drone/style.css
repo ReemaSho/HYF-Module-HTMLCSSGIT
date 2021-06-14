@@ -12,6 +12,7 @@ body {
   height: 100%;
   font-family: "Roboto", sans-serif;
 }
+/* ---------------------header section----------- */
 
 header {
   width: 100%;
@@ -54,11 +55,12 @@ header h1 {
   text-transform: uppercase;
   margin-left: 1%;
 }
+/* --------------------end header section --------------- */
 
-/* ----------tablet------------ */
+/* ----------media Q foe tablet------------ */
 @media all and (min-width: 600px) and (max-width: 1024px) {
   body {
-    background-color: black;
+    /* background-color: black; */
   }
   header {
     padding-top: 15%;
@@ -67,8 +69,9 @@ header h1 {
     font-size: 6rem;
     margin-left: 3%;
   }
+  /*end editing header------ */
 }
-/* ---------------desktop------ */
+/* ---------------media Q for desktop------ */
 @media all and (min-width: 1025px) {
   header {
     padding-top: 10%;
@@ -76,4 +79,5 @@ header h1 {
   header > h1 {
     font-size: 8rem;
   }
+  /* end editing header ----- */
 }
