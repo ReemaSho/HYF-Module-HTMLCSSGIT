@@ -100,7 +100,7 @@ main > section > h2 {
 }
 h3 {
   text-transform: uppercase;
-  /* margin-left: 3%; */
+  text-align: center;
   margin: 3vh 0 3vh 3%;
 }
 p {
@@ -131,6 +131,7 @@ p {
   /* margin-left: 5%; */
   /* height: 100%; */
 }
+/* --------------end-------------------------------------- */
 
 /* ----------media Q foe tablet------------ */
 @media all and (min-width: 600px) {
@@ -178,6 +179,7 @@ p {
   .grid-item {
     border: 1px solid red;
     padding: 1%;
+    cursor: pointer;
   }
   .grid-floats > .grid-item {
     width: 30.66%;
@@ -207,7 +209,7 @@ p {
 
   .grid-floats > .grid-item > img {
     width: 80%;
-
+    display: block;
     padding: 1%;
     transition: 1s;
     margin-left: 10%;
@@ -229,9 +231,11 @@ p {
   .grid-floats > .grid-item > img:hover {
     cursor: pointer;
     transform: scale(1.1);
-    margin: 2% 0;
+    margin: 2% 0 2% 10%;
   }
   /*end editing grid-floats section------ */
+
+  /*start editing grid-flex section------ */
   .grid-flex {
     display: flex;
     flex-direction: row;
@@ -243,11 +247,23 @@ p {
     margin-top: 5%;
     margin-bottom: 5%;
   }
+  .grid-flex > .grid-item > img {
+    transition: 1s;
+  }
   .grid-flex > .grid-item:first-child {
     flex-basis: 47% !important;
   }
   .grid-flex > .grid-item:nth-child(2) {
     flex-basis: 47% !important;
+  }
+  .grid-flex > .grid-item > img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    margin: 2% 0;
+  }
+  main > section:nth-child(2) > h2 {
+    width: 60vw;
+    cursor: pointer;
   }
 }
 /* ---------------media Q for desktop------ */
@@ -300,15 +316,9 @@ p {
   .grid-flex > .grid-item:nth-child(2) {
     flex-basis: 22.5% !important;
   }
-  .grid-flex > .grid-item > img {
-    /* height: 60%;
-    width: 50%; */
-  }
+
   .grid-flex > .grid-item:first-child > img {
     height: 50%;
     width: 40%;
-  }
-  section:last-child > h2 {
-    margin-left: 20px;
   }
 }
