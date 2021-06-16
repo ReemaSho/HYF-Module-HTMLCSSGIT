@@ -309,7 +309,7 @@ p {
   .grid-floats > .grid-item {
     width: 22.5%;
     float: right;
-    height: 500px;
+    height: 520px;
   }
   main > section > .grid-floats > .grid-item:first-child {
     width: 47%;
@@ -331,7 +331,7 @@ p {
   /*start editing grid-flex section------ */
   .grid-flex > .grid-item {
     flex-basis: 22.5%;
-    height: 500px;
+    height: 520px;
   }
   main > section > .grid-flex > .grid-item:first-child {
     flex-basis: 47%;
