@@ -29,6 +29,7 @@ header {
   margin-bottom: 35vh;
   clear: both;
 }
+/* cover photo */
 header::before {
   content: "";
   position: absolute;
@@ -42,6 +43,7 @@ header::before {
   filter: grayscale(100%);
   z-index: -2;
 }
+/* bottom small cover */
 header::after {
   content: "";
   background-color: #ffffff;
@@ -53,6 +55,7 @@ header::after {
   clip-path: polygon(48% 100%, 100% 0, 99% 100%, 0 100%, 0 0);
   z-index: -1;
 }
+/* titile */
 header h1 {
   background: linear-gradient(to right, red, yellow);
   -webkit-background-clip: text;
@@ -68,12 +71,10 @@ header h1 {
 main {
   width: 100%;
   z-index: 1;
-  /* background-color: tomato; */
 }
 main section {
   width: 95%;
   margin: auto;
-  /* background-color: yellow; */
 }
 main > section > h2 {
   color: red;
@@ -83,20 +84,16 @@ main > section > h2 {
   text-align: center;
   font-style: italic;
   text-transform: uppercase;
-  /* background-color: turquoise; */
 }
 /* ------------------- start grid float section ------------------- */
 .grid-floats {
   width: 100%;
   position: relative;
-  /* background-color: slateblue; */
 }
 .grid-floats > .grid-item {
   width: 100%;
   list-style: none;
   color: #333;
-  /* background-color: deeppink; */
-  /* height: 100vh; */
 }
 h3 {
   text-transform: uppercase;
@@ -110,12 +107,8 @@ p {
 .grid-floats > .grid-item > img {
   width: 85%;
   margin: 5%;
-  /* background-color: #333; */
 }
-/* .grid-floats:nth-child(2) > p {
-  direction: rtl;
-  margin: 0 3% 15vh 0%;
-} */
+
 /* ________________end grid float section ___________ */
 /* ___________________start grid flex section------------- */
 .grid-flex > .grid-item {
@@ -128,15 +121,18 @@ p {
 
 .grid-flex > .grid-item > img {
   width: 85%;
-  /* margin-left: 5%; */
-  /* height: 100%; */
 }
 /* --------------end-------------------------------------- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
 
 /* ----------media Q foe tablet------------ */
 @media all and (min-width: 600px) {
   body {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   header {
     padding-top: 15%;
@@ -146,18 +142,18 @@ p {
     margin-left: 3%;
   }
   /*end editing header------ */
-  /*start editing grid-floats section------ */
 
+  /* common style for both sections */
   main > section > h2 {
-    width: 60vw;
-    height: 10vh;
+    width: 50vw;
+    height: 5vh;
     color: azure;
     text-align: start;
     display: table-cell;
     vertical-align: middle;
     clip-path: polygon(0% 0%, 89% 1%, 100% 50%, 89% 100%, 0% 100%);
     padding-left: 2%;
-
+    font-size: 1.5rem;
     clear: both;
     background: rgb(245, 156, 11);
     background: linear-gradient(
@@ -173,39 +169,35 @@ p {
   .grid-floats,
   .grid-flex {
     margin-top: 10vh;
-    /* padding-right: 2%; */
+    margin-bottom: 10vh;
     width: 100%;
   }
   .grid-item {
     border: 1px solid red;
     padding: 1%;
     cursor: pointer;
+    padding-top: 5%;
   }
+  .grid-floats > .grid-item > h3,
+  .grid-floats > .grid-item > p,
+  .grid-flex > .grid-item > h3,
+  .grid-flex > .grid-item > p {
+    margin: 0;
+    text-align: center;
+  }
+  /*start editing grid-floats section------ */
   .grid-floats > .grid-item {
     width: 30.66%;
     margin-left: 2%;
     display: block;
     float: left;
-    height: 60vh;
+    height: 500px;
     margin-top: 5%;
-    margin-bottom: 5%;
   }
 
-  .grid-floats > .grid-item > h3,
   .grid-floats > .grid-item > p {
-    margin: 0;
-    text-align: center;
+    margin-top: 2%;
   }
-  .grid-floats > .grid-item > h3 {
-    margin-bottom: 5%;
-  }
-  .grid-floats > .grid-item > p {
-    margin-top: 0.5%;
-  }
-  /* .grid-floats:nth-child(2) > p {
-    direction: rtl;
-    margin: 0;
-  } */
 
   .grid-floats > .grid-item > img {
     width: 80%;
@@ -216,11 +208,11 @@ p {
     margin-left: 10%;
   }
 
-  .grid-floats > .grid-item:first-child {
-    width: 47% !important;
+  main > section > .grid-floats > .grid-item:first-child {
+    width: 47%;
   }
-  .grid-floats > .grid-item:nth-child(2) {
-    width: 47% !important;
+  main > section > .grid-floats > .grid-item:nth-child(2) {
+    width: 47%;
   }
   .grid-floats::after {
     clear: both;
@@ -251,16 +243,25 @@ p {
     margin-left: 2%;
     margin-top: 5%;
     margin-bottom: 5%;
+    height: 500px;
+    justify-content: unset;
+  }
+  .grid-flex > .grid-item > h3 {
+    margin-bottom: 5%;
   }
   .grid-flex > .grid-item > img {
     transition: 1s;
     scale: (0.9);
+    margin-top: 8%;
   }
-  .grid-flex > .grid-item:first-child {
-    flex-basis: 47% !important;
+  main > section > .grid-flex > .grid-item:first-child {
+    flex-basis: 47%;
   }
-  .grid-flex > .grid-item:nth-child(2) {
-    flex-basis: 47% !important;
+  main > section > .grid-flex > .grid-item:nth-child(2) {
+    flex-basis: 47%;
+  }
+  .grid-flex > .grid-item > p {
+    margin-top: 5%;
   }
   .grid-flex > .grid-item > img:hover {
     cursor: pointer;
@@ -269,15 +270,22 @@ p {
   }
   main > section:nth-child(2) > h2 {
     width: 60vw;
-    cursor: pointer;
   }
   main section .grid-flex :hover h3 {
     text-decoration: underline;
     color: red;
   }
 }
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
 /* ---------------media Q for desktop------ */
 @media all and (min-width: 1025px) {
+  body {
+    font-size: 1rem;
+  }
   header {
     padding-top: 10%;
   }
@@ -286,6 +294,10 @@ p {
     font-size: 8rem;
   }
   /* end editing header ----- */
+
+  main > section > h2 {
+    font-size: 3rem;
+  }
   /*start editing grid-floats section------ */
   .grid-floats {
     padding-left: 2%;
@@ -297,13 +309,13 @@ p {
   .grid-floats > .grid-item {
     width: 22.5%;
     float: right;
-    height: 55vh;
+    height: 500px;
   }
-  .grid-floats > .grid-item:first-child {
-    width: 47% !important;
+  main > section > .grid-floats > .grid-item:first-child {
+    width: 47%;
   }
-  .grid-floats > .grid-item:nth-child(2) {
-    width: 22.5% !important;
+  main > section > .grid-floats > .grid-item:nth-child(2) {
+    width: 22.5%;
   }
   .grid-floats > .grid-item:first-child > img {
     height: 50%;
@@ -316,19 +328,35 @@ p {
   }
 
   /*end editing grid-floats section------ */
+  /*start editing grid-flex section------ */
   .grid-flex > .grid-item {
     flex-basis: 22.5%;
-    height: 55vh;
+    height: 500px;
   }
-  .grid-flex > .grid-item:first-child {
-    flex-basis: 47% !important;
+  main > section > .grid-flex > .grid-item:first-child {
+    flex-basis: 47%;
   }
-  .grid-flex > .grid-item:nth-child(2) {
-    flex-basis: 22.5% !important;
+  main > section > .grid-flex > .grid-item:nth-child(2) {
+    flex-basis: 22.5%;
   }
 
   .grid-flex > .grid-item:first-child > img {
     height: 50%;
     width: 40%;
+    /*end editing grid-flex section------ */
+  }
+}
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+@media all and (min-width: 1550px) {
+  /* edit the height of the cards */
+  .grid-float > .grid-item {
+    height: 700px;
+  }
+  .grid-flex > .grid-item {
+    height: 700px;
   }
 }
