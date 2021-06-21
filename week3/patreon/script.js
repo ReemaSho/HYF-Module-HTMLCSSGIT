@@ -14,3 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems, {});
       });
+
+function closeBtn () {
+        document.getElementById('mobile-demo').style.display='none';
+    }
