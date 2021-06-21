@@ -17,29 +17,85 @@
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>PATREON</title>
-      </head>
-      <body>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper white ">
+    </head>
+    <body>
+        <div class="navbar-fixed  nav-extended">
+          
+            <nav class="row white">
+              <!-- left side only large screens -->
+                <div class="col s2 l7 nav-wrapper white  left">
+                  <div class="col hide-on-large-only">  <a  href="#" ><div><svg height="24px" version="1.1" viewBox="0 0 569 546" width="30px" xmlns="http://www.w3.org/2000/svg"><g class="icon" ><circle class="icon" cx="362.589996" cy="204.589996" data-fill="1" r="204.589996"></circle><rect class="icon" data-fill="1" height="545.799988" width="100" x="0" y="0"></rect></g></svg></div></a></div>
                   
-                  
-                  <ul id="nav-mobile" class="left hide-on-med-and-down">
+                  <ul id="nav-mobile" class=" hide-on-med-and-down">
                     <li>  <a  href="#" ><div><svg height="24px" version="1.1" viewBox="0 0 569 546" width="30px" xmlns="http://www.w3.org/2000/svg"><g class="icon" ><circle class="icon" cx="362.589996" cy="204.589996" data-fill="1" r="204.589996"></circle><rect class="icon" data-fill="1" height="545.799988" width="100" x="0" y="0"></rect></g></svg></div></a></li>
-                    <li><a href="#" class=" dropdown-trigger mygreycolor" data-target="dropdown1">Product<i class=" tiny material-icons mygreycolor">expand_more</i></a></li>
-                    <li><a href="#" class="dropdown-trigger mygreycolor" data-target="dropdown2">For creators<i class=" tiny material-icons mygreycolor">expand_more</i></a></li>
-                    <li><a href="#" class="nav-hover mygreycolor">Pricing</a></li>
-                    <li><a href="#" class="dropdown-trigger mygreycolor"  data-target="dropdown3">Resources<i class="tiny material-icons mygreycolor">expand_more</i></a></li>
-                    <li><a href="#" class="nav-hover mygreycolor">Start Kits</a></li>
+                    <li><a href="#" class=" dropdown-trigger my-grey-color" data-target="dropdown1">Product<i class=" tiny material-icons my-grey-color">expand_more</i></a></li>
+                    <li><a href="#" class="dropdown-trigger my-grey-color" data-target="dropdown2">For creators<i class=" tiny material-icons my-grey-color">expand_more</i></a></li>
+                    <li><a href="#" class="my-nav-hover my-grey-color">Pricing</a></li>
+                    <li><a href="#" class="dropdown-trigger my-grey-color"  data-target="dropdown3">Resources<i class="tiny material-icons my-grey-color">expand_more</i></a></li>
+                    <li><a href="#" class="my-nav-hover my-grey-color">Start Kits</a></li>
                   </ul>
                 
                 </div>
-              </nav>
+                 
+              
+   <!-- right navbar for all sizes -->
+                  
+                <div class="col s10 m10 l3  nav-wrapper white right ">
+                  
+                  
+                    <ul id="my-right-nav" class="right">
+                      
+                          
+                      <li class=" "><a href="#" class="my-nav-hover my-grey-color">log In</a></li>
+                      <li class=""><a id="my-nav-btn" class=" btn red accent-2 white-text">Create on Patreon</a></li> 
+                      <li class="hide-on-large-only"><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons my-grey-color">menu</i></a></li>
+                      
+                    </ul>
+                  
+                  </div>
+
+   <!-- search section -->
+                <div class="col  s11 m11 l2">
+                     <div class="section-search">
+                        <div class=" input-field">
+                        
+                            <input type="text" class="grey lighten-3 my-grey-color" placeholder="Find a creator">
+                            <i class="material-icons prefix  grey-text lighten-4">search</i>
+                        </div>
+                    </div>
+                    </div> 
+
+                  </nav>
               
         </div>
+<!-- side navbare for mobile -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a onclick="closeBtn()" href=""> <i class=" right material-icons  grey-text darken-2">close</i></a></li>
+          <li><a  href="#" ><div><svg height="24px" version="1.1" viewBox="0 0 569 546" width="30px" xmlns="http://www.w3.org/2000/svg"><g class="icon" ><circle class="icon" cx="362.589996" cy="204.589996" data-fill="1" r="204.589996"></circle><rect class="icon" data-fill="1" height="545.799988" width="100" x="0" y="0"></rect></g></svg></div></a></div></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><i class="material-icons right grey-text darken-2">expand_more</i></li>
+          <li><a href="#">Product</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li ><i class="material-icons right grey-text darken-2">expand_more</i></li>
+          <li><a href="#" class=" my-grey-color">For creators</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#">Pricing</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><i class="material-icons right grey-text darken-2">expand_more</i></li>
+          <li><a href="#">Resources</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#">Start Kits</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#">Create on Patroen</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#">Log In</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      
         
-        <!-- dropdown menus -->
-        <ul id="dropdown1" class="dropdown-content nav-hover">
+ <!-- dropdown menus -->
+        <ul id="dropdown1" class="dropdown-content my-nav-hover">
             <li><h6>Lite</h6>
             <p>Simple tools to set up recurring<br>support from your fans</p>
            </li>
@@ -51,30 +107,31 @@
            </li>
             
           </ul>
-          <ul id="dropdown2" class="dropdown-content nav-hover">
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">microform</i>Podcasters</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">videocam</i>Video creators</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">piano</i>Musicians</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">palette</i>Visual Artists</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons  ">forum</i>Communities</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">history_edu</i>Writers&Journalists</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">videogame_asset</i>Gaming Creators</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">favorite_border</i>Nonprofits</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">cast_for_education</i>Tutorials and Education</a></li>
-            <li><a href="#" class="mygreycolor"><i class="material-icons ">location_on</i>Local Businesses</a></li>
-            <li><a href="#" class="mygreycolor">Creators-of-all-kids</a></li>
+          <ul id="dropdown2" class="dropdown-content my-nav-hover">
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">microform</i>Podcasters</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">videocam</i>Video creators</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">piano</i>Musicians</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">palette</i>Visual Artists</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons  ">forum</i>Communities</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">history_edu</i>Writers&Journalists</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">videogame_asset</i>Gaming Creators</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">favorite_border</i>Nonprofits</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">cast_for_education</i>Tutorials and Education</a></li>
+            <li><a href="#" class="my-grey-color"><i class="material-icons ">location_on</i>Local Businesses</a></li>
+            <li><a href="#" class="my-grey-color">Creators-of-all-kids</a></li>
          </ul>
-         <ul id="dropdown3" class="dropdown-content nav-hover">
-            <li><h6>Blog</h6></li>
-           <li><h6>Creator Community</h6></li>
-           <li><h6>Events</h6></li>
-           <li><h6>Patreon U</h6></li>
-           <li><h6>App Directory</h6></li>
-           <li><h6>Help Center & FAQ</h6></li>
+         <ul id="dropdown3" class="dropdown-content my-nav-hover">
+            <li><h6 class="my-grey-color">Blog</h6></li>
+           <li><h6 class="my-grey-color">Creator Community</h6></li>
+           <li><h6 class="my-grey-color">Events</h6></li>
+           <li><h6 class="my-grey-color">Patreon U</h6></li>
+           <li><h6 class="my-grey-color"> App Directory</h6></li>
+           <li><h6 class="my-grey-color">Help Center & FAQ</h6></li>
          </ul>
+  <!-- ------------------------------------------------------end nav  -->
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       
         
-     </body>
+    </body>
 </html>

@@ -9,3 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     var instances = M.Dropdown.init(down , options);
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+      });
