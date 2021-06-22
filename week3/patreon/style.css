@@ -271,6 +271,14 @@ a.slider-links {
   text-decoration: underline;
   color: rgb(36, 30, 18);
 }
+/* ----------------------------end slider section */
+/* fluid image */
+.fluid-image > img {
+  /* margin: 5% 10% 0 10%; */
+  width: 100%;
+  margin-top: 5%;
+}
+
 @media all and (max-width: 990px) {
   .navbar-fixed {
     height: 128px;
@@ -280,6 +288,7 @@ a.slider-links {
   .my-left-nav {
     height: 64px;
   }
+
   /* .navbar-fixed > nav > .nav-wrapper > ul:nth-child(2) {
  
   display: grid !important;
