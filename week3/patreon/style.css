@@ -190,10 +190,10 @@ h1 {
 }
 
 h2 {
-  font-family: Walsheim, sans-serif;
   font-size: 2.5em;
   margin-top: 10%;
   margin-left: -8%;
+  font-family: "Quicksand", sans-serif;
 }
 .container .section-search .input-field input {
   border-radius: 20px;
@@ -225,9 +225,9 @@ p {
 }
 
 h3 {
-  font-family: Walsheim, sans-serif;
   font-weight: 700 !important;
   margin: 0.5rem 0rem;
+  font-family: "Quicksand", sans-serif;
 }
 .image-txt {
   display: flex;
@@ -237,6 +237,7 @@ h3 {
 .image-txt a p {
   margin: 0;
   font-weight: 700;
+  font-size: 0.8rem;
 }
 .image-txt div svg {
   font-size: 2rem;
@@ -247,7 +248,29 @@ h3 {
   text-decoration: underline;
   color: red;
 }
+p.my-card-font-size {
+  font-size: 1.2rem;
+}
+/* ----------------------------end card section */
+/* start slider section */
+.slider {
+  margin-top: 15%;
+}
+a.slider-links {
+  font-weight: bolder;
+  font-size: 1.6rem;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(177, 172, 163);
+}
 
+.container-links {
+  display: flex;
+  flex-direction: column;
+}
+.slider-links:hover {
+  text-decoration: underline;
+  color: rgb(36, 30, 18);
+}
 @media all and (max-width: 990px) {
   .navbar-fixed {
     height: 128px;
@@ -276,6 +299,23 @@ h3 {
   .my-container {
     padding: 0%;
   }
+  .container-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 10px;
+    padding: 0;
+  }
+  .slider {
+    margin-top: 2%;
+  }
+  .slider-links {
+    margin: 0 10px;
+    vertical-align: bottom;
+    font-size: 0.8rem;
+  }
 }
 @media all and (max-width: 600px) {
   #my-right-nav #test {
@@ -296,5 +336,10 @@ h3 {
   }
   #video-section .row .order1 {
     margin-bottom: 20%;
+  }
+  .slider-links {
+    margin: 0 2px;
+    vertical-align: bottom;
+    font-size: 1rem;
   }
 }
