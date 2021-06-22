@@ -184,24 +184,18 @@ h1 {
   font-family: "Quicksand", sans-serif;
 }
 /* ----------------------------end video section */
+/* start search section */
 .my-container {
   padding: 0 5%;
 }
 
 h2 {
-  font-family: "Quicksand", sans-serif;
+  font-family: Walsheim, sans-serif;
   font-size: 2.5em;
   margin-top: 10%;
-  margin-left: 6%;
+  margin-left: -8%;
 }
-.my-container .section-search .input-field input {
-  /* font-size: 14px;
-  border-radius: 20px;
-  height: 30%;
-  padding: 10px;
-  padding-left: 40px;
-  width: 100%;
-  overflow: hidden; */
+.container .section-search .input-field input {
   border-radius: 20px;
   padding-left: 2px;
 
@@ -210,12 +204,50 @@ h2 {
   box-shadow: none;
 }
 
-.my-container .row #my-search-btn {
+.container .row #my-search-btn {
   width: 100% !important;
 }
 #my-search-btn {
   align-self: middle;
-  margin-top: 15px;
+  margin-top: 20px;
+}
+/* ----------------------------end search section */
+/* start text section */
+p {
+  font-size: 1.125rem;
+  line-height: 2;
+  font-weight: 400 !important;
+}
+/* ----------------------------end text section */
+/* start card section */
+.my-container {
+  padding: 10%;
+}
+/* .image-container image {
+  width: 100%;
+} */
+h3 {
+  font-family: Walsheim, sans-serif;
+  font-weight: 700 !important;
+  margin: 0.5rem 0rem;
+}
+.image-txt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image-txt a p {
+  margin: 0;
+  font-weight: 700;
+}
+.image-txt div svg {
+  font-size: 2rem;
+  margin-left: 15px;
+  opacity: 0.7;
+}
+.image-txt:hover a {
+  text-decoration: underline;
+  color: red;
 }
 
 @media all and (max-width: 990px) {
@@ -232,8 +264,7 @@ h2 {
   display: grid !important;
 
   grid-template-columns: 1fr 2fr 1fr !important;
-  grid-template-areas: "login button menu" !important;
-} */
+  grid-template-areas: "login button menu" !important;*/
 
   #my-search-btn {
     margin-top: 0px;
@@ -244,25 +275,28 @@ h2 {
     margin-top: 10%;
     margin-left: 0;
   }
-  @media all and (max-width: 600px) {
-    #my-right-nav #test {
-      width: 50% !important;
-    }
+  .my-container {
+    padding: 0%;
+  }
+}
+@media all and (max-width: 600px) {
+  #my-right-nav #test {
+    width: 50% !important;
+  }
 
-    h1 {
-      font-size: 3.5rem;
-    }
-    .my-video video {
-      width: 100%;
-      margin: auto;
-    }
-    #video-section .row {
-    }
-    #video-section .row {
-      margin: 15%;
-    }
-    #video-section .row .order1 {
-      margin-bottom: 20%;
-    }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .my-video video {
+    width: 100%;
+    margin: auto;
+  }
+  #video-section .row {
+  }
+  #video-section .row {
+    margin: 15%;
+  }
+  #video-section .row .order1 {
+    margin-bottom: 20%;
   }
 }
