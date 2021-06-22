@@ -214,7 +214,7 @@ h2 {
 /* ----------------------------end search section */
 /* start text section */
 p {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   line-height: 2;
   font-weight: 400 !important;
 }
@@ -223,9 +223,7 @@ p {
 .my-container {
   padding: 10%;
 }
-/* .image-container image {
-  width: 100%;
-} */
+
 h3 {
   font-family: Walsheim, sans-serif;
   font-weight: 700 !important;
