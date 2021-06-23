@@ -84,7 +84,6 @@ nav ul a:first-child div {
 .dropdown-content li > a > .material-icons {
   -webkit-text-fill-color: #a9d6e5;
   -webkit-text-stroke-width: 1px;
-  -wibkit-text-stroke-color: #013a63;
 }
 .navbar-fixed nav div:nth-child(3) {
   background-color: #fff;
@@ -296,6 +295,7 @@ a.slider-links {
   font-weight: bolder;
   font-size: 1.6rem;
   color: rgb(177, 172, 163);
+  font-family: "Quicksand", sans-serif;
 }
 
 .container-links {
@@ -325,9 +325,14 @@ h5 {
   font-size: 1rem;
   color: rgb(112, 108, 100);
 }
-.read-more {
+.read-more a span {
   color: rgb(36, 30, 18);
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(36, 30, 18);
+}
+.read-more:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 /* ----------------------------end cards 2 section */
 /* are you ready section */
