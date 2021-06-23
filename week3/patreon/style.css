@@ -339,7 +339,9 @@ footer {
 }
 .icon2 {
   fill: whitesmoke;
-  margin-top: 20px;
+}
+.my-footer-logo {
+  margin-bottom: 40px;
 }
 footer .container .row col ul li {
   font-size: 0.5rem !important;
@@ -405,7 +407,7 @@ footer .container .row col h6 {
 /*  */
 /*  */
 /*  */
-/* ----------------------------end are footer */
+/* ----------------------------end  footer */
 
 @media all and (max-width: 990px) {
   .navbar-fixed {
