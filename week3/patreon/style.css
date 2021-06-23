@@ -51,7 +51,7 @@ nav ul a:hover {
 .my-nav-hover:hover {
   text-decoration: underline;
 }
-
+/* align the logo in the center */
 nav ul a:first-child div {
   display: flex;
   align-items: center;
@@ -132,17 +132,24 @@ nav ul a:first-child div {
 .btn,
 .btn-large {
   border-radius: 30px;
-  background-color: #ff424d;
-  border: 2px solid #ff424d;
+  /* background-color: #ff424d;
+  border: 2px solid #ff424d; */
+  background-color: rgb(255, 66, 77);
+  border: 2px solid rgb(255, 66, 77);
   font-weight: 500;
   text-transform: none;
+}
+.btn-large:hover,
+.btn:hover {
+  background-color: rgb(255, 53, 65);
+  cursor: pointer;
 }
 nav ul a.btn {
   margin-left: 5px;
   margin-right: 5px;
   min-width: 80%;
 }
-.btn:hover {
+nav ul a.btn:hover {
   box-shadow: none;
   color: #ff424d !important;
   background: white;
