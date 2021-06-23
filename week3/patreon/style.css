@@ -160,7 +160,7 @@ nav ul a.btn:hover {
   width: 100%;
 }
 #mobile-demo li {
-  padding: 5px 20px 0 0px;
+  padding: 5px 20px 0 0;
 }
 #mobile-demo li:first-child a {
   display: contents;
@@ -172,10 +172,10 @@ nav ul a.btn:hover {
   padding: 0 !important;
 }
 #mobile-demo li .material-icons {
-  font-size: 35px;
   font-weight: lighter;
   margin-top: 1%;
   cursor: pointer;
+  margin-right: 0%;
 }
 .sidenav li > a:hover {
   background-color: transparent;
