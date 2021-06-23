@@ -67,6 +67,12 @@ nav ul a:first-child div {
 .dropdown-content {
   padding: 5px 0 !important;
 }
+#dropdown1 li p {
+  font-size: 1rem;
+}
+#dropdown3 li h6 {
+  font-size: 1rem;
+}
 .dropdown-content li {
   padding: 5px !important;
 }
