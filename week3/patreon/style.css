@@ -432,6 +432,16 @@ footer .container .row col h6 {
     margin-top: 10%;
     margin-left: 0;
   }
+  .my-video video {
+    width: 100%;
+    margin: auto;
+  }
+  #video-section .row {
+    margin: 15%;
+  }
+  #video-section .row .order1 {
+    margin-bottom: 20%;
+  }
   .my-container {
     padding: 0%;
   }
@@ -474,18 +484,7 @@ footer .container .row col h6 {
   h1 {
     font-size: 3.5rem;
   }
-  .my-video video {
-    width: 100%;
-    margin: auto;
-  }
-  #video-section .row {
-  }
-  #video-section .row {
-    margin: 15%;
-  }
-  #video-section .row .order1 {
-    margin-bottom: 20%;
-  }
+
   .slider-links {
     margin: 0 2px;
     vertical-align: bottom;
