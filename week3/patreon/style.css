@@ -237,6 +237,9 @@ h2 {
 .container .section-search .input-field .prefix {
   top: 10px;
 }
+.container .section-search .input-field:focus .prefix {
+  display: none;
+}
 
 .container .row #my-search-btn {
   width: 100% !important;
