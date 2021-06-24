@@ -198,7 +198,7 @@ nav ul a.btn:hover {
   align-items: center;
   justify-content: center;
 }
-.my-video video {
+.my-video img {
   width: 90%;
   position: relative;
 }
@@ -456,9 +456,8 @@ footer .container .row col h6 {
     margin-top: 10%;
     margin-left: 0;
   }
-  .my-video video {
+  .my-video img {
     width: 100%;
-    margin: auto;
   }
   #video-section .row {
     margin: 15%;
