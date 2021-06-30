@@ -120,7 +120,7 @@ nav ul a:first-child div {
   bottom: 0;
   left: 10px;
 }
-/* I have a problem with the menu icon on small screen , I tried to call only this UL in many ways but to make it grid but it doesn't work   */
+/* I have a problem with the menu icon on small screen , I've tried to call only this UL in many ways to make it grid but it doesn't work   */
 /* the right section of the nav */
 /* .navbar-fixed > nav > .nav-wrapper > ul:nth-child(2) {
  
@@ -142,8 +142,6 @@ nav ul a:first-child div {
 .btn,
 .btn-large {
   border-radius: 30px;
-  /* background-color: #ff424d;
-  border: 2px solid #ff424d; */
   background-color: rgb(255, 66, 77);
   border: 2px solid rgb(255, 66, 77);
   font-weight: 500;
@@ -249,13 +247,13 @@ h2 {
   margin-top: 20px;
 }
 /* ----------------------------end search section */
-/* start text section */
+/* start What's Patreon section */
 p {
   font-size: 1.5rem;
   line-height: 2;
   font-weight: 400 !important;
 }
-/* ----------------------------end text section */
+/* ----------------------------end What's Patreon section */
 /* start card section */
 .my-container {
   padding: 10%;
@@ -309,6 +307,7 @@ a.slider-links {
   text-decoration: underline;
   color: rgb(36, 30, 18);
 }
+
 /* ----------------------------end slider section */
 /* fluid image */
 .fluid-image > img {
